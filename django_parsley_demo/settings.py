@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'parsley',
-    'demo_app'
+    'demo_app',
+    'widget_tweaks',
 ]
 
 MIDDLEWARE = [

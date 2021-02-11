@@ -4,8 +4,8 @@ from parsley.decorators import parsleyfy
 
 @parsleyfy
 class UserProfileForm(forms.Form):
-    username = forms.CharField(min_length=3, max_length=20)
-    name = forms.CharField(min_length=3, max_length=30)
+    username = forms.CharField(min_length=3, max_length=20, required=True)
+    name = forms.CharField(min_length=3, max_length=30, required=False)
     password = forms.CharField(widget=forms.PasswordInput(), required=True)
     password_1 = forms.CharField(widget=forms.PasswordInput(), required=True,
                                  label='Confirm password')
